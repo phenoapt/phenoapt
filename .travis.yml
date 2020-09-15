@@ -2,9 +2,9 @@
 
 language: python
 python:
-  - 3.8
-  - 3.7
-  - 3.6
+- 3.8
+- 3.7
+- 3.6
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
@@ -19,9 +19,9 @@ script: tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: ran404
+  username: __token__
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: CfQDn4AKBi0LG25hUPBLl8rMhwQzrI2EVCUOUPikUpok9pMtSKHKT4OqYQLmNm2A1Gbmxa+egdTwBfWMhjbH9fNRZrfAXTkhlrSFhL2fhZJYNOHxtu2NSEFPC4CeZdvKaZQqfTS4JcIFQRWbMbx+0MNa10AIcEwV/HIy3QdkVkGx3aYY7ER04B9N/pQ9+z3A3C5YZtSH46Csk+1PVW4ZL7ep9U7X3IaYQQdBR9Bsb9VzUAIsGNZODCXrFmTEgPr6yJZhQeFmoEtnFsVTAab8CSv8uTw8nOwC4x8H/tCcElnmZDAgbGOzeg8XMQt9BIWEcGjzV3YIYZ6I7W1Ymrs19fETqW5h72tj+QfL35ESb2WBXP+rdR4T1RA+AIm88dLSAe0wIyF3zrF8HAN9eA+PjAl2j4+99tUU7r3UyNu5kscOaXLJ9G+hDmzVFZCE2A4vcbw49jwYVCIJTu2AIKgNZW3xWdrEcYnpIljf2b21s4Ce1K6qX539q2Dzjc+JHgmDGHqrTfVxAfbmOoLSkNZi7COOpmpMmtl73WJp7GHtWAgVeRkrX7DyiUM9YzYgMr+n6kYEgeg9L4+Nej7HE33W1OmRse4KQFRHPJwJ5BmtGZAEJf+rhFKUvgyKmPOpvclmvgMQgLDeWlRfzePXlDhPMjup9cvxHLEE04OF5tNsUjw=
   on:
     tags: true
     repo: phenoapt/phenoapt
