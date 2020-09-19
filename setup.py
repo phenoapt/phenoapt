@@ -13,7 +13,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', 'requests']
+requirements = ['Click>=7.0', 'requests', 'tabulate']
 
 setup_requirements = ['pytest-runner', ]
 
@@ -29,7 +29,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -51,6 +50,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/phenoapt/phenoapt',
-    version='0.1.0',
+    version='0.1.1',
     zip_safe=False,
 )

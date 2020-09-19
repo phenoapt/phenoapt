@@ -3,4 +3,4 @@
 
 __author__ = """The PhenoApt Team"""
 __email__ = 'info@phenoapt.org'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
