@@ -35,7 +35,7 @@ class PhenoAptResult(object):
 
 
 class PhenoApt(RestAPI):
-    def __init__(self, base_url, token=None):
+    def __init__(self, base_url='https://phenoapt.org', token=None):
         super(PhenoApt, self).__init__(base_url)
         self.token = token
 
