@@ -9,27 +9,19 @@ phenoapt
 .. image:: https://img.shields.io/travis/phenoapt/phenoapt.svg
         :target: https://travis-ci.com/phenoapt/phenoapt
 
-.. image:: https://readthedocs.org/projects/phenoapt/badge/?version=latest
-        :target: https://phenoapt.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-
 .. image:: https://pyup.io/repos/github/phenoapt/phenoapt/shield.svg
      :target: https://pyup.io/repos/github/phenoapt/phenoapt/
      :alt: Updates
 
 
+Phenotype-based Gene Prioritization, modelled using Graph Embedding techniques
 
-PhenoApt python client API library
-
-
-* Free software: MIT license
-* Documentation: https://phenoapt.readthedocs.io.
+This project contains the python client API library.
 
 Installation
 ------------
 
-You get phenoapt using pip:
+You install phenoapt with pip:
 
     pip install phenoapt
 
@@ -64,7 +56,7 @@ An example of top 10 gene rankings given phenotypes and weights::
          9  91.1848  EZ:4000      LMNA
         10  92.2059  EZ:2273      FHL1
 
-and simililarly, disease ranking can be obtained like this::
+and similarly, disease rankings can be obtained like this::
 
     $ phenoapt rank-disease -p 'HP:0001193,HP:0001231,HP:0002999,HP:0003621' -w '1,2,2,1' -n 10
       rank    score  disease_id    disease_name
@@ -80,7 +72,7 @@ and simililarly, disease ranking can be obtained like this::
          9  75.1829  OMD:228520    FIBROCHONDROGENESIS 1; FBCG1
         10  78.0241  OMD:609945    OMD:609945
 
-For more information about tool usage, use --help.
+For more information about tool usage, run phenoapt with --help.
 
 Code usage
 ------------------
