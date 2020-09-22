@@ -6,7 +6,7 @@ import json
 import click
 import sys
 
-from phenoapt.phenoapt import PhenoApt
+from phenoapt import PhenoApt
 
 pass_client = click.make_pass_decorator(PhenoApt)
 
