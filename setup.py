@@ -50,6 +50,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/phenoapt/phenoapt',
-    version='0.1.1',
+    version='0.1.4',
     zip_safe=False,
 )
