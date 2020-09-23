@@ -9,10 +9,6 @@ phenoapt
 .. image:: https://img.shields.io/travis/phenoapt/phenoapt.svg
         :target: https://travis-ci.com/phenoapt/phenoapt
 
-.. image:: https://pyup.io/repos/github/phenoapt/phenoapt/shield.svg
-     :target: https://pyup.io/repos/github/phenoapt/phenoapt/
-     :alt: Updates
-
 
 Phenotype-based Gene Prioritization, modelled using Graph Embedding techniques
 
@@ -77,4 +73,4 @@ For more information about tool usage, run phenoapt with --help.
 Code usage
 ------------------
 
-TODO
+See `jupyter notebook example <https://github.com/phenoapt/phenoapt/blob/master/notebooks/phenoapt-example.ipynb>`_
