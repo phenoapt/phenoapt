@@ -29,6 +29,8 @@ def main(ctx, endpoint, token):
 @pass_client
 def rank_gene(client: PhenoApt, phenotype, weight, model, num, format):
     """ Show gene rankings """
+    phenotype = phenotype.replace('：', ':').replace('，', ',')
+    weight = weight.replace('，', ',')
     res = client.rank_gene(phenotype, weight=weight, n=num)
     rank = res.rank
     if format == 'simple':
@@ -58,6 +60,8 @@ def rank_gene(client: PhenoApt, phenotype, weight, model, num, format):
 @pass_client
 def rank_disease(client, phenotype, weight, model, num, format):
     """ Show disease rankings """
+    phenotype = phenotype.replace('：', ':').replace('，', ',')
+    weight = weight.replace('，', ',')
     res = client.rank_disease(phenotype, weight=weight, n=num)
     rank = res.rank
     if format == 'simple':
