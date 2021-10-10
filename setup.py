@@ -21,7 +21,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     author="PhenoApt Team",
-    author_email='phenoapt@ekitech.cn',
+    author_email='phenoapt@imperialgene.com',
     python_requires='>=3.5',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
