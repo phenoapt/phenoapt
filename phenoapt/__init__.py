@@ -3,6 +3,6 @@
 
 __author__ = """The PhenoApt Team"""
 __email__ = 'info@phenoapt.org'
-__version__ = '0.1.5'
+__version__ = '0.1.6'
 
 from .phenoapt import *

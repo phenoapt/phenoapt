@@ -21,7 +21,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     author="PhenoApt Team",
-    author_email='phenoapt@ekitech.cn',
+    author_email='phenoapt@imperialgene.com',
     python_requires='>=3.5',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -50,6 +50,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/phenoapt/phenoapt',
-    version='0.1.5',
+    version='0.1.6',
     zip_safe=False,
 )
