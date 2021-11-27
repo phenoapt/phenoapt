@@ -70,7 +70,7 @@ class PhenoAptResult(object):
 
 
 class PhenoApt(RestAPI):
-    def __init__(self, base_url='https://phenoapt.org', token=None):
+    def __init__(self, base_url='https://phenoapt.org', token=None, verify=True):
         """
         Returns a new PhenoApt Client.
 
@@ -79,6 +79,7 @@ class PhenoApt(RestAPI):
         """
         super(PhenoApt, self).__init__(base_url)
         self.token = token
+        self.verify = verify
 
     @staticmethod
     def _get_error_message(response):
@@ -102,7 +103,7 @@ class PhenoApt(RestAPI):
         custom_headers = kwargs.pop('headers', {})
         headers.update(custom_headers)
 
-        response = func(self.base_url + rest_path, headers=headers, *args, **kwargs)
+        response = func(self.base_url + rest_path, headers=headers, verify=self.verify, *args, **kwargs)
         try:
             response.raise_for_status()
         except:
